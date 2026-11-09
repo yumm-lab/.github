@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" role="img" aria-labelledby="t">
+<title id="t">yumm-lab: a smiling lab flask bubbling next to the word yumm</title>
+<style>
+/* Hallmark · genre: playful · macrostructure: none (GitHub README banner) · theme: Hum · tone: playful · enrichment: Tier B hand-built SVG
+ * Hallmark · pre-emit critique: P4 H5 E4 S5 R4 V4 */
+svg {
+  --color-panel: oklch(86% 0.18 95);
+  --color-word: oklch(20% 0.012 250);
+  --color-line: oklch(20% 0.012 250);
+  --color-flask: oklch(97% 0.012 95);
+  --color-accent-2: oklch(66% 0.18 235);
+  --color-pop: oklch(68% 0.24 18);
+  --color-face: oklch(20% 0.012 250);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --stroke-word: 30px;
+  --stroke-line: 14px;
+}
+.panel { fill: var(--color-panel); }
+.word { fill: none; stroke: var(--color-word); stroke-width: var(--stroke-word); stroke-linecap: round; stroke-linejoin: round; }
+.dash { fill: none; stroke: var(--color-pop); stroke-width: var(--stroke-word); stroke-linecap: round; }
+.glass { fill: var(--color-flask); }
+.line { fill: none; stroke: var(--color-line); stroke-width: var(--stroke-line); stroke-linecap: round; stroke-linejoin: round; }
+.liquid { fill: var(--color-accent-2); animation: slosh 3.2s linear infinite; }
+.eye { fill: var(--color-face); transform-box: fill-box; transform-origin: center; animation: blink 5s var(--ease-in-out) infinite; }
+.smile { fill: none; stroke: var(--color-face); stroke-width: 7px; stroke-linecap: round; }
+.cheek { fill: var(--color-pop); opacity: 0.55; }
+.spark-pop { fill: var(--color-pop); }
+.spark-cool { fill: var(--color-accent-2); }
+.bubble { animation: rise 2.7s var(--ease-in-out) infinite; }
+.b1 { fill: var(--color-pop); animation-delay: -0.2s; }
+.b2 { fill: var(--color-accent-2); animation-delay: -1.1s; }
+.b3 { fill: var(--color-pop); animation-delay: -2s; }
+@keyframes slosh { to { transform: translateX(-120px); } }
+@keyframes blink { 0%, 94%, 100% { transform: scaleY(1); } 97% { transform: scaleY(0.1); } }
+@keyframes rise {
+  0% { transform: translateY(0); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: translateY(-100px); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .liquid, .eye, .bubble { animation: none; } }
+</style>
+<defs>
+  <clipPath id="inside"><path d="M975 72V140L893 275Q880 310 918 310H1082Q1120 310 1107 275L1025 140V72Z"/></clipPath>
+</defs>
+<rect class="panel" width="1200" height="380" rx="32"/>
+<g transform="translate(-18 0)">
+  <g id="wordmark" class="word">
+    <path d="M130 130V185a45 45 0 0 0 90 0"/>
+    <path d="M220 130V250a45 45 0 0 1-45 45h-25"/>
+    <path d="M270 130V185a45 45 0 0 0 90 0"/>
+    <path d="M360 130V230"/>
+    <path d="M410 130V230M410 175a45 45 0 0 1 90 0V230M500 175a45 45 0 0 1 90 0V230"/>
+    <path d="M640 130V230M640 175a45 45 0 0 1 90 0V230M730 175a45 45 0 0 1 90 0V230"/>
+  </g>
+  <path class="dash" d="M870 180H896"/>
+  <path class="spark-pop" transform="translate(862 88)" d="M0-20Q3-3 20 0Q3 3 0 20Q-3 3-20 0Q-3-3 0-20Z"/>
+  <path class="spark-cool" transform="translate(1136 118)" d="M0-14Q2-2 14 0Q2 2 0 14Q-2 2-14 0Q-2-2 0-14Z"/>
+  <g id="flask">
+    <path class="glass" d="M975 72V140L893 275Q880 310 918 310H1082Q1120 310 1107 275L1025 140V72Z"/>
+    <g clip-path="url(#inside)">
+      <path class="liquid" d="M780 212q30-14 60 0t60 0t60 0t60 0t60 0t60 0t60 0t60 0V340H780Z"/>
+    </g>
+    <path class="line" d="M975 72V140L893 275Q880 310 918 310H1082Q1120 310 1107 275L1025 140V72"/>
+    <path class="line" d="M958 72H1042"/>
+    <circle class="cheek" cx="946" cy="266" r="11"/>
+    <circle class="cheek" cx="1054" cy="266" r="11"/>
+    <ellipse class="eye" cx="972" cy="248" rx="8" ry="10"/>
+    <ellipse class="eye" cx="1028" cy="248" rx="8" ry="10"/>
+    <path class="smile" d="M984 264q16 17 32 0"/>
+  </g>
+  <circle class="bubble b1" cx="992" cy="186" r="7"/>
+  <circle class="bubble b2" cx="1008" cy="168" r="5"/>
+  <circle class="bubble b3" cx="1000" cy="150" r="6"/>
+</g>
+</svg>
